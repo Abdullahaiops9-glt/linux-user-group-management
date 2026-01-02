@@ -9,7 +9,6 @@ This project automates Linux user and group management using Bash scripting with
 - Action logging
 
 ## Run
-```bash
 sudo ./user_group_manager.sh
 
 ## Maintainer
