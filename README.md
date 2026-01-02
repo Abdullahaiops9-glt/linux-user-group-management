@@ -23,17 +23,17 @@ linux-user-group-management
 ── touch user_group_manager.sh user_mgmt.log README.md SETUP.md
 ── chmod +x user_group_manager.sh
 
+## Prerequisites
+- Linux system (Ubuntu, Debian, CentOS)
+- Root or sudo access
+- Bash shell
+
 ## Run
 sudo ./user_group_manager.sh
 
 ## Input:
 Enter username: ali
 Enter group: developers
-
-## Prerequisites
-- Linux system (Ubuntu, Debian, CentOS)
-- Root or sudo access
-- Bash shell
 
 ## Output:
 - User 'ali' created and added to group 'developers'
@@ -43,14 +43,14 @@ Enter group: developers
 - 2025-12-29 14:10:22 INFO: Group 'developers' created.
 - 2025-12-29 14:10:23 INFO: User 'ali' created and added to group 'developers'.
 
+## Script Explanation
+ Root Check
+  ── if [[ $EUID -ne 0 ]]; then
+
 ## Error Handling
 - Prevents execution without root privileges
 - Detects existing users and groups
 - Logs warnings instead of failing silently
-
-## Script Explanation
- Root Check
-  ── if [[ $EUID -ne 0 ]]; then
 
 ## User & Group Creation
 ── groupadd creates groups
