@@ -9,7 +9,9 @@ This project automates Linux user and group management using Bash scripting with
 - Action logging
 
 ## Structure
-linux-user-group-management/
+
+linux-user-group-management
+
 ├── user_group_manager.sh
 ├── user_mgmt.log
 ├── README.md
